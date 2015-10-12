@@ -12,7 +12,7 @@ module Alipay
         'service'        => 'create_partner_trade_by_buyer',
         '_input_charset' => 'utf-8',
         'partner'        => options[:pid] || Alipay.pid,
-        'seller_id'      => options[:pid] || Alipay.pid,
+        # 'seller_id'      => options[:pid] || Alipay.pid,
         'payment_type'   => '1'
       }.merge(params)
 
